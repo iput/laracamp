@@ -13,8 +13,14 @@ class CreateCampsTable extends Migration
      */
     public function up()
     {
-        Schema::table('camps', function (Blueprint $table) {
+        Schema::create('camps', function (Blueprint $table) {
             //
+            $table->id();
+            $table->string('title',100);
+            $table->string('slug',100);
+            $table->integer('price')->unsigned();
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -25,8 +31,6 @@ class CreateCampsTable extends Migration
      */
     public function down()
     {
-        Schema::table('camps', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('camps');
     }
 }

@@ -15,14 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
-Route::get('/login',function()
+Route::get('login',function()
 {
     return view('front.login');
 })->name('login');
 
-Route::get('/checkout',function()
+Route::get('checkout',function()
 {
     return view('front.checkout');
 })->name('checkout');
+
+Route::get('success',function ()
+{
+    return view('front.success');
+})->name('success');

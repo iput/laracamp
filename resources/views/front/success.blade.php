@@ -8,7 +8,7 @@
             </div>
             <div class=" col-lg-12 col-12 header-wrap mt-4">
                 <p class="story">
-                    WHAT A DAY!
+                    YEAH, WHAT A DAY!
                 </p>
                 <h2 class="primary-header ">
                     Berhasil Checkout
